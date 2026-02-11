@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ English Teacher Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+    <style>
+        body {
+            background-color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+        body.dark {
+            background-color: #1f2937;
+        }
+        .emerald-bg {
+            background-color: #10b981;
+            transition: background-color 0.3s ease;
+        }
+        .dark .emerald-bg {
+            background-color: #065f46;
+        }
+        .emerald-text {
+            color: #10b981;
+            transition: color 0.3s ease;
+        }
+        .dark .emerald-text {
+            color: #34d399;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#home" class="text-xl font-bold emerald-text">DZ English Teacher Hub</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 dark:text-gray-300 hover:emerald-text px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
+                    <a href="#1as" class="text-gray-700 dark:text-gray-300 hover:emerald-text px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">1AS Resources</a>
+                    <a href="#2as" class="text-gray-700 dark:text-gray-300 hover:emerald-text px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">2AS Resources</a>
+                    <a href="#3as" class="text-gray-700 dark:text-gray-300 hover:emerald-text px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">3AS Resources</a>
+                    <a href="#official" class="text-gray-700 dark:text-gray-300 hover:emerald-text px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Official Documents</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="dark-mode-toggle" class="text-gray-700 dark:text-gray-300 hover:emerald-text focus:outline-none transition-colors duration-300">
+                        <i id="dark-mode-icon" class="fas fa-moon"></i>
+                    </button>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-button" class="text-gray-700 dark:text-gray-300 hover:emerald-text focus:outline-none">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-md transition-colors duration-300">
+            <a href="#home" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:emerald-text transition-colors duration-300">Home</a>
+            <a href="#1as" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:emerald-text transition-colors duration-300">1AS Resources</a>
+            <a href="#2as" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:emerald-text transition-colors duration-300">2AS Resources</a>
+            <a href="#3as" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:emerald-text transition-colors duration-300">3AS Resources</a>
+            <a href="#official" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:emerald-text transition-colors duration-300">Official Documents</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="emerald-bg py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-8">DZ English Teacher Hub</h1>
+            <p class="text-xl text-white mb-8">Your go-to resource for Algerian Secondary School English teaching materials.</p>
+            <div class="max-w-md mx-auto">
+                <div class="flex">
+                    <input type="text" placeholder="Search resources..." class="flex-1 px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-l-md focus:outline-none focus:ring-2 focus:ring-white dark:bg-gray-700 dark:text-white transition-colors duration-300">
+                    <button class="bg-white dark:bg-gray-700 text-emerald-600 dark:text-emerald-400 px-4 py-2 rounded-r-md hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-300">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1AS Resources Section -->
+    <section id="1as" class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center emerald-text mb-12">1AS Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Unit Files</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Comprehensive unit files for 1AS English curriculum.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Lesson Plans</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Detailed lesson plans tailored for 1AS students.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Annual Progressions</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Yearly progression guides for 1AS English.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2AS Resources Section -->
+    <section id="2as" class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center emerald-text mb-12">2AS Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Unit Files</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Comprehensive unit files for 2AS English curriculum.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Lesson Plans</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Detailed lesson plans tailored for 2AS students.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Annual Progressions</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Yearly progression guides for 2AS English.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3AS Resources Section -->
+    <section id="3as" class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center emerald-text mb-12">3AS Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Unit Files</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Comprehensive unit files for 3AS English curriculum.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Lesson Plans</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Detailed lesson plans tailored for 3AS students.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Annual Progressions</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Yearly progression guides for 3AS English.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Official Documents Section -->
+    <section id="official" class="py-16 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center emerald-text mb-12">Official Documents</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Curriculum Guidelines</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Official curriculum guidelines for English teaching.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Assessment Rubrics</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Standardized assessment rubrics.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg shadow-md transition-colors duration-300">
+                    <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Policy Documents</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">Educational policies related to English teaching.</p>
+                    <button class="emerald-bg text-white px-4 py-2 rounded-md hover:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors duration-300">
+                        <i class="fas fa-download mr-2"></i>Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="emerald-bg py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-white">&copy; 2023 DZ English Teacher Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const darkModeIcon = document.getElementById('dark-mode-icon');
+        const body = document.body;
+
+        // Check for saved theme preference or default to light mode
+        if (localStorage.getItem('darkMode') === 'true') {
+            body.classList.add('dark');
+            darkModeIcon.classList.remove('fa-moon');
+            darkModeIcon.classList.add('fa-sun');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            const isDark = body.classList.contains('dark');
+            localStorage.setItem('darkMode', isDark);
+            if (isDark) {
+                darkModeIcon.classList.remove('fa-moon');
+                darkModeIcon.classList.add('fa-sun');
+            } else {
+                darkModeIcon.classList.remove('fa-sun');
+                darkModeIcon.classList.add('fa-moon');
+            }
+        });
+    </script>
+</body>
+</html>
